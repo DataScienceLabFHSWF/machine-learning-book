@@ -13,14 +13,14 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Machine Learning \\ Exercise 1: Introduction to linear regression with scikit-learn}
+\title{Machine Learning \\ Exercise 1: Introduction to linear regression with scikit-learn and scipy}
 \author{Prof. Dr. Thomas Kopinski}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-In this week's exercise you will become familiar with using the python module scikit-learn to perform a linear regression on a given dataset. The data can be checked out from this courses's Git repository. 
+In this week's exercise you will become familiar with using the python module scikit-learn to perform a linear regression on a given dataset. In addition you will use the more flexible curve\_fit function from the scipy package. The data can be checked out from this courses's Git repository. 
 \end{abstract}
 
 \section*{Task 1: Getting familiar with scikit-learn}
@@ -29,8 +29,28 @@ In this week's exercise you will become familiar with using the python module sc
     \item Additional information about implementing linear regression in python with the help of scikit-learn can be found  \href{https://github.com/DataScienceLabFHSWF/machine-learning-book/blob/main/notebooks/ch09/ch09.ipynb}{here}
     \item The repository for this course can be found \href{https://github.com/DataScienceLabFHSWF/machine-learning-book/}{here}
 \end{itemize}
+\section*{Task 2: Linear regression with scikit-learn}
+\begin{itemize}
+    \item import the necessary modules
+    \item load the file with the name "simple\_regression.csv" from the data subfolder with numpy or pandas 
+    \item instantiate a LinearRegression model from the scikit-learn library
+    \item fit a linear model $f(x) = y = mx+b$ to the given data (reshaping of the data might be necessary)
+    \item display the values of the coefficients and plot the data and fitted function
+    \item interpret the results
+\end{itemize}
 
-
+\section*{Task 3: Linear regression with scipy}
+\begin{itemize}
+    \item import the necessary modules
+    \item load the file with the name "simple\_regression.csv" from the data subfolder with numpy or pandas 
+    \item define a model function that returns a linear mapping of the variable $x$
+    \item fit that linear model to the data with scipy.optimize.curve\_fit
+    \item display the values of the coefficients and covariance matrix
+    \item what is the meaning of the covariance matrices entries?
+    \item plot the data and fitted function
+    \item interpret the results and compare it to the scikit-learn version
+    \item can this method be used in a more general way?
+\end{itemize}
 
 %\bibliographystyle{alpha}
 %\bibliography{sample}
